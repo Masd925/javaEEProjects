@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd" id="WebApp_ID" version="3.0">
+  <display-name>RandomNumber</display-name>
+  <welcome-file-list>
+    <welcome-file>index.jsp</welcome-file>
+  </welcome-file-list>
+  <servlet>
+    <servlet-name>Double</servlet-name>
+    <servlet-class>main.RandomDouble</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>Integer</servlet-name>
+    <servlet-class>main.RandomInteger</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Double</servlet-name>
+    <url-pattern>/double</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>Double</servlet-name>
+    <url-pattern>/d</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>Integer</servlet-name>
+    <url-pattern>/integer</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>Integer</servlet-name>
+    <url-pattern>/i</url-pattern>
+  </servlet-mapping>
+</web-app>
